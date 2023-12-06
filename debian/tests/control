@@ -1,0 +1,4 @@
+Tests: go-test
+Depends: golang,
+         @,
+Restrictions: isolation-container, needs-root

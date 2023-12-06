@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+export GOPATH=/usr/share/gocode
+export GO111MODULE=off
+go test -v -cpu 1,2,3 github.com/vishvananda/netns/...

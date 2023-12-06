@@ -1,4 +1,8 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
 
 %:
-	dh $@
+	dh $@ --buildsystem=golang --with=golang
+
+override_dh_auto_test:
+	# tests require root privs, so we skip them in favor of DEP8
